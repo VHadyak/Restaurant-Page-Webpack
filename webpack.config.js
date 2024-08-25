@@ -14,4 +14,12 @@ module.exports = {
       template: "./src/template.html", // generate html file in dist directory with injected js bundle
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"], // Translate CSS into JS module, then take JS module and inject CSS into html
+      },
+    ],
+  },
 }
