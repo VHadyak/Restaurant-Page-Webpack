@@ -1,4 +1,4 @@
 import "./styles.css";
+import { loadDOM } from "./content.js";
 
-const test = "Hello World";
-console.log(test);
+loadDOM();
