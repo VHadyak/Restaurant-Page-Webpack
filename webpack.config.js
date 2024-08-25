@@ -9,6 +9,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"), // create a dist folder with bundle.js
     clean: true, // only show the most recent bundling code
   },
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/template.html"], // Watch for html file changes to trigger automatic reload
+    open: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html", // generate html file in dist directory with injected js bundle
