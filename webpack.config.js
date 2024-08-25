@@ -11,7 +11,12 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/template.html"], // Watch for html file changes to trigger automatic reload
+    watchFiles: {
+      paths: ["./src/template.html"], // Watch for html file changes to trigger automatic reload
+      options: {
+        usePolling: true, // Use polling to detect changes 
+      },
+    },
     open: true,
   },
   plugins: [
@@ -27,4 +32,4 @@ module.exports = {
       },
     ],
   },
-}
+};
