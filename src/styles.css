@@ -77,8 +77,16 @@ button:hover {
   transform: scale(1.15);
 }
 
+button:active {
+  transform: scale(1.25);
+}
+
 button.book-btn:hover {
   transform: scale(1.10);
+}
+
+button.book-btn:active {
+  transform: scale(1.20);
 }
 
 div#content {

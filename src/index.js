@@ -1,4 +1,4 @@
 import "./styles.css";
-import { loadDOM } from "./content.js";
+import { loadHome } from "./home.js";
 
-loadDOM();
+loadHome();

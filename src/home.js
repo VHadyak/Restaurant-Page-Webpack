@@ -1,6 +1,6 @@
 
-// DOM module
-export const loadDOM = function() {
+// Home DOM module
+export const loadHome = function() {
   
   const headline = document.createElement("div");
   headline.classList.add("headline");
@@ -11,7 +11,6 @@ export const loadDOM = function() {
   description.innerHTML = `Experience the art of modern steak at <em>Steak & Ember</em>. 
                            Savor expertly crafted, premium cuts in a chic, contemporary setting. 
                            Reserve your table for a standout dining experience.`;
-  
   
   const homeBtn = document.createElement("button");
   homeBtn.classList.add("book-btn");
