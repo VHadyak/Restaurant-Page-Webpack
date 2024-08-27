@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #000000, #16140c);
 }
 
 header {
@@ -29,6 +30,8 @@ header {
   display: flex;
   justify-content: space-between;
   background: var(--header-bg-color);
+  box-shadow: 
+  inset 0 -2px 10px rgba(0, 0, 0, 0.579); /* Stronger shadow at the bottom */
 }
 
 .header-left {
@@ -88,7 +91,7 @@ button.book-btn:active {
   transform: scale(1.20);
 }
 
-div#content {
+.home-container {
   display: flex;
   flex: 1;
 }
@@ -142,4 +145,102 @@ div#content {
   background-color: transparent;
   cursor: pointer;
   transition: transform 0.3s ease-out;
+}
+
+/* Menu Content Style */
+
+.menu-container {
+ display: grid;
+ grid-template-columns: repeat(3, 500px);
+ grid-template-rows: repeat(2, minmax(400px, 1fr));
+ gap: 100px;
+ justify-content: center;
+}
+
+.menu-container > div {
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px 2px rgba(244, 225, 12, 0.451); 
+  transition: transform 0.3s ease-out;
+}
+
+.menu-container > div:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  border-radius: 50px 50px 0 0;
+  height: 75%;
+  box-shadow: inset rgb(3, 3, 3) 5px 5px 60px -2px; 
+}
+
+.card-1 .img {
+  background: url(./img/filet-mignon.jpg);
+  background-size: cover;
+  background-position: top -10px right 0;
+  background-repeat: no-repeat; 
+}
+
+.card-2 .img {
+  background: url(./img/ribeye-steak.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+.card-3 .img {
+  background: url(./img/steak-frites.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom -30px right 0;
+}
+
+.card-4 .img {
+  background: url(./img/steak-tartare.jpg);
+  background-size: 500px auto;
+  background-repeat: no-repeat;
+  background-position: bottom -130px right 0;
+}
+
+.card-5 .img {
+  background: url(./img/surf-turf.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom -175px right -15px;
+}
+
+.card-6 .img {
+  background: url(./img/tomahawk-steak.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom -20px right 0;
+}
+
+.food-title {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+  height: 10%;
+  font-size: 1.3rem;
+  background-color: #000000;
+  border-top: 2px solid rgba(242, 246, 8, 0.467);
+  color: rgb(239, 247, 160);
+}
+
+.desc {
+  height: 15%;
+  font-size: clamp(1rem, 0.5vw, 1.3rem);
+  padding: 2px 25px 5px 25px;
+  text-align: center;
+  border-radius: 0 0 50px 50px;
+  word-wrap: break-word;
+  background-color: #000000;
+  color: rgb(244, 247, 218);
+}
+
+.menu-title {
+  color: rgb(190, 202, 82);
+  text-align: center;
+  font-size: 3.3rem;
+  padding: 30px 0 30px 0;
 }

@@ -1,7 +1,12 @@
 
 // Home DOM module
 export const loadHome = function() {
-  
+
+  const content = document.querySelector("div#content");
+  content.classList.add("home-container");
+  content.classList.remove("menu-container");
+  content.classList.remove("contact-container");
+
   const headline = document.createElement("div");
   headline.classList.add("headline");
   headline.textContent = "Elevate Your Steak Experience: Modern Flavors, Classic Perfection";
@@ -25,9 +30,7 @@ export const loadHome = function() {
   homeContent.appendChild(description);
   homeContent.appendChild(homeBtn);
 
-  const content = document.querySelector("div#content");
   content.appendChild(contentImg);
   content.appendChild(homeContent);
- 
-  console.log("DOM Loaded");
+
 };
