@@ -65,18 +65,25 @@ nav {
   margin-right: 50px;
 }
 
+button > span {
+  padding-bottom: 2px;
+}
+
 button:not(.book-btn) {
   width: 100px;
   font-size: 1.3rem;
   font-weight: bold;
   background-color: transparent;
-  border: none;
   cursor: pointer;
   transition: transform 0.3s ease-out;
+  border: none;
 }
 
 button:hover {
   transform: scale(1.15);
+  span {
+    border-bottom: 2px solid black;
+  }
 }
 
 button:active {
@@ -243,4 +250,114 @@ button.book-btn:active {
   text-align: center;
   font-size: 3.3rem;
   padding: 30px 0 30px 0;
+}
+
+/* Contact style */ 
+
+.contact-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.contact-bg-img {
+  position: absolute;
+  background: url(./img/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.contact-sec {
+  background-color: #16140ce9;
+  width: 40%;
+  height: 65vh;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.163);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 3.3rem;
+  padding: 50px 0 50px 0;
+  color: rgb(246, 239, 230);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 700px;
+  gap: 40px;
+  color: rgb(246, 239, 230);
+  padding-left: 75px;
+  font-size: 1.8rem;
+  padding-bottom: 70px;
+}
+
+.info {
+  line-height: 2.5rem;
+}
+
+.follow-container {
+  color: rgb(246, 239, 230);
+  width: 700px;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.follow-container > div {
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+
+.follow-container > div:hover {
+  transform: scale(1.05);
+}
+
+.follow-container > div:active {
+  transform: scale(1.1);
+}
+
+.insta {
+  background: url(./img/insta.svg);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+}
+
+.x {
+  background: url(./img/x.svg);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 13px;
+}
+
+.facebook {
+  background: url(./img/facebook.svg);
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.follow-us {
+  color: rgb(215, 252, 248);
+  font-size: 1.8rem;
 }

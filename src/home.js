@@ -1,6 +1,6 @@
 
 // Home DOM module
-export const loadHome = function() {
+export default function loadHome() {
 
   const content = document.querySelector("div#content");
   content.classList.add("home-container");

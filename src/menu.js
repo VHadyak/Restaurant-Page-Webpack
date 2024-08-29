@@ -1,6 +1,6 @@
 
 // Menu DOM Module
-export const loadMenu = function() {
+export default function loadMenu() {
 
   const content = document.querySelector("div#content");
   content.classList.remove("home-container");
