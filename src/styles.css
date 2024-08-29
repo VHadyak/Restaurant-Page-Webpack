@@ -86,6 +86,10 @@ button:hover {
   }
 }
 
+.highlight {
+  border-bottom: 2px solid black;
+}
+
 button:active {
   transform: scale(1.25);
 }
