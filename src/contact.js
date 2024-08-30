@@ -1,4 +1,7 @@
 
+import { createFooter } from "./footer.js";
+const footer = createFooter();
+
 // Contact DOM Module
 export default function loadContact() {
 
@@ -59,8 +62,10 @@ export default function loadContact() {
   followContainer.appendChild(xLink);
   followContainer.appendChild(facebookLink);
 
-  contactSection.appendChild(followContainer);
+  
 
+  contactSection.appendChild(followContainer);
   content.appendChild(contactImg);
   content.appendChild(contactSection);
+  document.body.appendChild(footer);
 };

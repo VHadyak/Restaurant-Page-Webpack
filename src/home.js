@@ -1,4 +1,7 @@
 
+import { createFooter } from "./footer";
+const footer = createFooter();
+
 // Home DOM module
 export default function loadHome() {
 
@@ -29,8 +32,8 @@ export default function loadHome() {
   homeContent.appendChild(headline);
   homeContent.appendChild(description);
   homeContent.appendChild(homeBtn);
+  homeContent.appendChild(footer);
 
   content.appendChild(contentImg);
   content.appendChild(homeContent);
-
 };

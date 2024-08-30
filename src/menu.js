@@ -1,4 +1,7 @@
 
+import { createFooter } from "./footer";
+const footer = createFooter();
+
 // Menu DOM Module
 export default function loadMenu() {
 
@@ -76,5 +79,6 @@ export default function loadMenu() {
     menuContainer.appendChild(card);
   });
 
-  content.appendChild(menuContainer);
+  content.appendChild(menuContainer); 
+  content.appendChild(footer);
 };

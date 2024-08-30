@@ -117,6 +117,7 @@ button.book-btn:active {
 }
 
 .home-content {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -125,6 +126,42 @@ button.book-btn:active {
   gap: 70px;
   background: var(--home-bg-color);
   color: var(--home-font-color);
+}
+
+.footer {
+  position: absolute;
+  font-size: 1rem;
+  display: flex;
+  height: 40px;
+  bottom: 0; /* Align to the bottom of the container */
+  left: 0; /* Ensure it stretches across the container */
+  width: 100%; /* Full width of the container */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.573);
+}
+
+a:visited {
+  color: rgba(255, 255, 255, 0.573);
+}
+
+.footer-img {
+  background: url(./img/github.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  background-color: aliceblue;
+  width: 25px;
+  height: 25px;
 }
 
 .headline {
@@ -172,7 +209,7 @@ button.book-btn:active {
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 8px 2px rgba(244, 225, 12, 0.451); 
+  box-shadow: 0px 0px 8px 2px rgba(186, 238, 246, 0.526); 
   transition: transform 0.3s ease-out;
 }
 
@@ -234,8 +271,8 @@ button.book-btn:active {
   height: 10%;
   font-size: 1.3rem;
   background-color: #000000;
-  border-top: 2px solid rgba(242, 246, 8, 0.467);
-  color: rgb(239, 247, 160);
+  border-top: 2px solid rgba(178, 240, 248, 0.51);
+  color: var(--home-font-color);
 }
 
 .desc {
@@ -246,11 +283,11 @@ button.book-btn:active {
   border-radius: 0 0 50px 50px;
   word-wrap: break-word;
   background-color: #000000;
-  color: rgb(244, 247, 218);
+  color: var(--home-font-color);
 }
 
 .menu-title {
-  color: rgb(190, 202, 82);
+  color: var(--home-font-color);
   text-align: center;
   font-size: 3.3rem;
   padding: 30px 0 30px 0;
@@ -280,7 +317,7 @@ button.book-btn:active {
   width: 40%;
   height: 65vh;
   border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.163);
+  border: 1px solid rgba(209, 248, 245, 0.492);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,7 +326,7 @@ button.book-btn:active {
 .contact-title {
   font-size: 3.3rem;
   padding: 50px 0 50px 0;
-  color: rgb(246, 239, 230);
+  color: var(--home-font-color);
 }
 
 .info-container {
@@ -298,7 +335,7 @@ button.book-btn:active {
   align-content: center;
   width: 700px;
   gap: 40px;
-  color: rgb(246, 239, 230);
+  color: var(--home-font-color);
   padding-left: 75px;
   font-size: 1.8rem;
   padding-bottom: 70px;
@@ -309,7 +346,6 @@ button.book-btn:active {
 }
 
 .follow-container {
-  color: rgb(246, 239, 230);
   width: 700px;
   padding-top: 30px;
   text-align: center;
@@ -362,6 +398,6 @@ button.book-btn:active {
 }
 
 .follow-us {
-  color: rgb(215, 252, 248);
+  color: rgb(250, 242, 201);
   font-size: 1.8rem;
 }
