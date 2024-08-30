@@ -36,4 +36,11 @@ export default function loadHome() {
 
   content.appendChild(contentImg);
   content.appendChild(homeContent);
+
+  // Remove duplicate footer in 'Home' tab due to Contact module appending ...
+  // ... the footer to document.body
+  const duplicateFooter = document.querySelector(".footer:not(.home-content .footer)");     // Select a duplicate footer that is outside .home-content element
+  if (duplicateFooter) {
+    duplicateFooter.remove();
+  };
 };

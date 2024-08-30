@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: "Montserrat", sans-serif;
-  src: url(./fonts/Montserrat-Medium.ttf) format("truetype");
+  src: url(fonts/Montserrat-Medium.ttf) format("truetype");
   font-style: normal;
 }
 
@@ -41,7 +41,7 @@ header {
 }
 
 .logo-header {
-  background: url(./img/logo.svg);
+  background: url(img/logo.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -109,7 +109,7 @@ button.book-btn:active {
 
 #content .content-img {
   position: relative;
-  background-image: url(./img/home-image.jpg);
+  background-image: url(img/home-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -155,7 +155,7 @@ a:visited {
 }
 
 .footer-img {
-  background: url(./img/github.svg);
+  background: url(img/github.svg);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -224,41 +224,41 @@ a:visited {
 }
 
 .card-1 .img {
-  background: url(./img/filet-mignon.jpg);
+  background: url(img/filet-mignon.jpg);
   background-size: cover;
   background-position: top -10px right 0;
   background-repeat: no-repeat; 
 }
 
 .card-2 .img {
-  background: url(./img/ribeye-steak.jpg);
+  background: url(img/ribeye-steak.jpg);
   background-size: cover; 
   background-repeat: no-repeat; 
 }
 
 .card-3 .img {
-  background: url(./img/steak-frites.jpg);
+  background: url(img/steak-frites.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom -30px right 0;
 }
 
 .card-4 .img {
-  background: url(./img/steak-tartare.jpg);
+  background: url(img/steak-tartare.jpg);
   background-size: 500px auto;
   background-repeat: no-repeat;
   background-position: bottom -130px right 0;
 }
 
 .card-5 .img {
-  background: url(./img/surf-turf.jpg);
+  background: url(img/surf-turf.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom -175px right -15px;
 }
 
 .card-6 .img {
-  background: url(./img/tomahawk-steak.jpg);
+  background: url(img/tomahawk-steak.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom -20px right 0;
@@ -304,7 +304,7 @@ a:visited {
 
 .contact-bg-img {
   position: absolute;
-  background: url(./img/contact-bg.jpg);
+  background: url(img/contact-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 65vh;
@@ -370,7 +370,7 @@ a:visited {
 }
 
 .insta {
-  background: url(./img/insta.svg);
+  background: url(img/insta.svg);
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
@@ -378,7 +378,7 @@ a:visited {
 }
 
 .x {
-  background: url(./img/x.svg);
+  background: url(img/x.svg);
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
@@ -387,7 +387,7 @@ a:visited {
 }
 
 .facebook {
-  background: url(./img/facebook.svg);
+  background: url(img/facebook.svg);
   width: 64px;
   height: 64px;
   background-size: cover;

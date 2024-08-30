@@ -1,5 +1,6 @@
 
 export function createFooter() {
+
   const footer = document.createElement("div");
   footer.classList.add("footer");
 

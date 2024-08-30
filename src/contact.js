@@ -63,7 +63,6 @@ export default function loadContact() {
   followContainer.appendChild(facebookLink);
 
   
-
   contactSection.appendChild(followContainer);
   content.appendChild(contactImg);
   content.appendChild(contactSection);
