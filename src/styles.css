@@ -254,7 +254,7 @@ a:visited {
   background: url(img/surf-turf.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom -175px right -15px;
+  background-position: bottom -175px right 0;
 }
 
 .card-6 .img {
