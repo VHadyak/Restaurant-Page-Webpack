@@ -23,7 +23,6 @@ buttons.forEach(button => {
     // Remove border highlight from all the buttons
     buttons.forEach(btn => {
       const span = btn.querySelector("span");
-      console.log(span);
       if (span) span.classList.remove("highlight");
     });
     
